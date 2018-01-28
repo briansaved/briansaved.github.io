@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* makes the image fill entire screen*/
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.name,
+.scroller {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* makes text in perfect mid*/
+}
+
+h1 {
+    font-family: "Inconsolata", monospace;
+    text-transform: uppercase;
+}
+
+.name {
+    top: 45%;
+    width: 50%;
+}
+
+.show {
+    width: 21%;
+    height: auto;
+    background: rgba(3, 4, 32, 0.45);
+    position: relative;
+   /* left: 43px;*/
+    visibility: visible;
+    transition: 0.4s;
+}
+
+
+
+.show li:hover {
+    background: rgba(3, 4, 32, 1);
+    padding-left: 12px;
+    transition: 0.3s;
+}
+
+.fa-3x:hover,
+#arrow:hover {
+    cursor: pointer;
+    opacity: 0.35;
+    transform: rotate3d(0, 1, 0, 180deg);
+    transition: 0.3s;
+    transition-delay: 0.15s;
+    -webkit-transition-delay: 0.15s;
+    -moz-transition-delay: 0.15s;
+    -o-transition-delay: 0.15s;
+}
+
+
+.name,
+a:hover {
+    background: linear-gradient(to right, #215AF6, #F2359D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.info {
+    /*font-size: 350%;*/
+    padding: 0;
+    margin-bottom: 20px;
+       
+}
+
+
+
+header {
+    background: linear-gradient(rgba(17, 20, 42, 1), rgba(17, 20, 42, 0.81)), url("https://images.pexels.com/photos/399636/pexels-photo-399636.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-transform: uppercase;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+div.scroller {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+}
+
+.scrolltext {
+    font-size: 10px;
+    letter-spacing: 3px;
+    padding-top: 0;
+}
+
+.material-icons.md-100 {
+    font-size: 100px;
+    margin-top: -20px;
+}
+
+#menulinks {
+    text-align: left;
+    padding: 20px;
+}
+
+nav p {
+    font-size: 65%;
+    letter-spacing: 4px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+   /* padding-left: 10px;*/
+    font-size: 90%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 5px;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+#secondpage {
+    background: linear-gradient(lightgray 50%, white 50%);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#bottom {
+    display: inline-block;
+    max-height: 200px;
+    max-width: 300px;
+    overflow: hidden;
+    box-shadow: 3px 4px 10px black;
+}
+
+#bottom:hover {
+    cursor: pointer;
+    box-shadow: 8px 5px 18px black;
+    transition: 0.1s;
+}
+
+#dp {
+    max-height: 200px;
+    max-width: 300px;
+    filter: grayscale(100%);
+}
+
+
+#hi {
+    margin-top: 20px;
+}
+
+#greeting,
+#summary {
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#summarytext,
+#span {
+    line-height: 150%;
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+.fa-2x {
+    opacity: 0.1;
+    margin-top: 0px;
+}
+
+#center {
+    position: relative;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    top: 5%;
+}
+
+#up {
+    font-family: "Jura";
+    font-size: 300%;
+    transform: rotate(180deg);
+    opacity: 0.5;
+   
+}
+
+#up:hover {
+    cursor: pointer;
+    font-size: 400%;
+    margin-top: -15px;
+    transition: 0.2s;
+    opacity: 0.25;
+}
+
+#scroll2 {
+    display: inline-block;
+    max-width: 7%;
+    text-align: center;
+    
+    
+}
+
+@media only screen and (min-device-width: 768px){
+  .show {
+    left: 43px;
+      width: 10%;
+  }
+    .description {
+    letter-spacing: 4px;
+    word-spacing: 5px;
+}
+    .info{
+        letter-spacing: 5px;
+        font-size: 350%;
+    }
+    
+    li a{
+        padding-left: 10px;
+    }
+    
+}
