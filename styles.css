@@ -36,7 +36,6 @@ h1 {
     height: auto;
     background: rgba(3, 4, 32, 0.45);
     position: relative;
-   /* left: 43px;*/
     visibility: visible;
     transition: 0.4s;
 }
@@ -71,7 +70,6 @@ a:hover {
 }
 
 .info {
-    /*font-size: 350%;*/
     padding: 0;
     margin-bottom: 20px;
        
@@ -119,8 +117,7 @@ nav p {
 li a {
     text-decoration: none;
     color: white;
-   /* padding-left: 10px;*/
-    font-size: 90%;
+    font-size: 80%;
 }
 
 ul {
@@ -243,6 +240,7 @@ li {
     
     li a{
         padding-left: 10px;
+        font-size: 90%
     }
     
 }
