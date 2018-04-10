@@ -2,61 +2,88 @@
 <html lang="en">
 
 <head>
-    <title>Brian Profile</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brian's Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet'>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 
 <body>
-    <header id="firstpage">
-        <nav id="menulinks">
-            <i class="fas fa-align-justify fa-3x"></i>
-            <p>menu</p>
-            <ul class="show hide">
-                <li id="firstopt"><a href="#">About</a></li>
-                <li id="secondopt"><a href="#">Experience</a></li>
-                <li id="thirdopt"><a href="#">Portfolio</a></li>
-                <li id="fourthopt"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="name">
-            <h1 class="info">Hello, I'm Brian</h1>
-            <p class="description">an aspiring web developer</p>
+    <header>
+        <div class="logo-container">
+            <img class="udacity-logo" src="./images/udacity240.png" alt="Udacity Logo" oncontextmenu="return false">
         </div>
-        <div class="scroller">
-            <p class="scrolltext"> SCROLL DOWN</p>
-            <i class="material-icons md-100" id="arrow">expand_more</i>
+        <div class="name">
+            <h1>Brian Chidarikire</h1>
+            <p class="job-title">Web-Smith</p>
+            <div class="menu">
+                <span><i class="material-icons">menu</i></span>
+                <!-- hamburger menu -->
+            </div>
         </div>
     </header>
-    <footer id="secondpage">
-        <div id="center">
-            <div id="bottom">
-
-                <img src="https://dl.dropbox.com/s/3c0xlv56hhb1ed7/2013-07-20%2021.58.43.jpg?=raw1" alt="InstaPic" id="dp" oncontextmenu="return false">
-            </div>
-            <div id="greeting">
-                <p id="hi">
-                    <span>HI THERE</span>
-                </p>
-                <p><i class="far fa-window-minimize fa-2x"></i></p>
-            </div>
-            <div id="summary">
-                <p id="summarytext">
-                    I am a web developer based in <a href="#">London</a>. With a growing Portfolio that is constantly updated, I have a passion for all things 'web'.</p>
-                <p id="span"><span>For more information visit my <a href="#" class="blog">Blog</a>.</span>
-                </p>
-                <div id="scroll2">
-                    <p id="up">V</p>
+    <hr>
+    <main>
+        <div class="main-picture">
+            <div class="main-image">
+                <div class="frosty">
+                    <div class="intro">LONDON BASED
+                        <p></p>
+                        <span>WEB-DEVELOPER</span></div>
                 </div>
             </div>
         </div>
-    </footer>
-    <script src="scripts.js"></script>
+        <div class="projects">
+            <h2> Project Showcase </h2>
+            <div class="showcase">
+                <div class="link-container pam-container">
+                    <a href="https://codepen.io/briansaved/pen/zpLQVB" class="link">
+                    <img src="./images/pam.jpeg" alt="Pixel Art Maker" class="project-item pam">
+                    
+                        <h2>Pixel Art Maker</h2>
+                    </a>
+                </div>
+                <div class="link-container atc-container">
+                    <a href="https://codepen.io/briansaved/full/jYQzRg/" class="link">
+                    <img src="./images/dragon.jpg" alt="Animal Trading Card" class="project-item card">
+                    
+                        <h2>Animal Trading Card</h2>
+                    </a>
+                </div>
+                <div class="link-container blog-container">
+
+                    <!--                   Designed to be the only fLEX ITEM that will wrap and take full width, therefore Image is Optimised according to width -->
+                    <a href="https://briantc.blogspot.co.uk" class="link">
+                        <!-- added to make picture a link-->
+
+                        <img srcset="./images/Big.png 1080w, ./images/blogpic500.png 500w, ./images/blogpic.png 300w, ./images/blogpic800.png 800w" sizes="(max-width: 456px) 419px,
+                           (min-width: 457px) 570px,
+                           (max-width: 676px) 639px,
+                           (min-width: 677px) 200px, 
+                           300px" src="./images/blogpic.png" alt="Personal Blog" class="project-item blog">
+                        <!--                    <a href="https://briantc.blogspot.co.uk" class="link"> (for future use to separate the picture from not being a link -->
+                        <h2>Personal Blog</h2>
+                    </a>
+                    <!--                    </a>-->
+                </div>
+            </div>
+            <footer>
+                <div class="social-links">
+                    <a class="social-item facebook" href="https://facebook.com/briansaved"> Facebook </a>
+                    <a class="social-item twitter" href="https://twitter.com/NewBrianTC"> Twitter </a>
+                    <a class="social-item github" href="https://github.io/briansaved"> Github </a>
+                    <a class="social-item linkedin" href="https://www.linkedin.com/in/newbrian/"> Linked In </a>
+                </div>
+                <p>&copy;2018 A <a href="https://twitter.com/NewBrianTC">@NewBrianTC</a> Udacity and Google Scholarship Project. Social media Icons by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> and licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+            </footer>
+        </div>
+    </main>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="javascript/portfolio.js"></script>
 
 </html>

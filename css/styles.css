@@ -1,0 +1,243 @@
+/* Designed for Mobile First to Load Faster */
+
+/* *********   Common    ********* */
+
+html,
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #E5E5E5;
+    margin: 0 auto;
+    max-width: 960px;
+
+}
+
+body {
+    -webkit-box-shadow: 8px 9px 15px white, -8px -5px 25px white;
+    box-shadow: 8px 9px 15px white, -8px -5px 25px white;
+
+}
+
+
+* {
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+
+
+/* *** Setting Up Fonts *** */
+
+.name > h1 {
+    font: 100 30px 'Quicksand', sans-serif;
+    color: #2d3c49;
+
+}
+
+.intro {
+    font: 600 130% 'Quicksand', sans-serif;
+    color: #2d3c49;
+    text-align: center;
+
+}
+
+.projects > h2 {
+    text-align: center;
+    font: 100 20px 'Quicksand', sans-serif;
+    color: #7d97ad;
+
+}
+
+
+.link-container > a > h2 {
+    font: 400 20px;
+    color: #2d3c49;
+}
+
+
+
+.link-container > a {
+    text-decoration: none;
+}
+
+
+.name .job-title {
+    font-size: 20px;
+    color: #2d3c49;
+}
+
+
+hr {
+    height: 1px;
+    border-color: #7d97ad;
+    /*adding support for IE Fallback*/
+    background-color: #7d97ad;
+    width: 100%;
+    margin-top: -10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+
+
+/* ****  Setting Up Areas and Alignments/Positioning *****  */
+
+header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+
+.logo-container,
+.name {
+    width: 100%;
+    text-align: center;
+}
+
+
+.udacity-logo {
+    width: 15%;
+    height: auto;
+}
+
+
+.material-icons {
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    opacity: 1;
+
+}
+
+
+/*** Hover Effect on Hamburger Menu ****/
+
+.material-icons:hover {
+    cursor: pointer;
+}
+
+
+/* Main Page image */
+
+.main-image {
+    background: url(../images/main460.png) no-repeat center/cover fixed;
+    /*    fixed: Parallax Effect */
+    width: 100%;
+    min-height: 300px;
+}
+
+
+.link-container {
+    text-align: center;
+    -ms-flex: 1 1 200px;
+    -webkit-box-flex: 1;
+    flex: 1 1 200px;
+    -webkit-box-shadow: 2px 2px 6px white;
+    box-shadow: 2px 2px 6px white;
+    margin: 10px;
+}
+
+
+.showcase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.project-item {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/****  Mobile Social Media Menu Bar - OffScreen *****/
+
+.social-links {
+    background: rgba(100, 100, 100, 0.95);
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    -webkit-transform: translate(-200%, 0);
+    transform: translate(-200%, 0);
+    -webkit-transition: 0.3s;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    z-index: 3;
+}
+
+
+/* Menu Bar shows up on screen */
+
+.social-links.show-menu {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+
+
+/** Social Media name off screen but accesible to SEO 
+    Screen readers and accessibility Apps **/
+
+.social-item {
+    text-indent: -10000px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    display: block;
+    height: 65px;
+    width: 100%;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+}
+
+
+
+/****     Socila Media Icons    ****/
+
+.facebook {
+    background: url(../images/facebook256.png) no-repeat center/contain;
+    height: auto;
+    display: block;
+
+}
+
+.twitter {
+    background: url(../images/twitter256.png) no-repeat center/contain;
+    height: auto;
+    display: block;
+}
+
+.github {
+    background: url(../images/github256.png) no-repeat center/contain;
+    height: auto;
+    display: block;
+}
+
+
+.linkedin {
+    background: url(../images/linkedin256.png) no-repeat center/contain;
+    height: auto;
+    display: block;
+}
+
+footer p {
+    font-size: 11px;
+    margin: 60px auto;
+    text-align: center;
+}
