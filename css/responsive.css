@@ -7,16 +7,12 @@
 /* Will still capture the 768px width of iPad */
 
 @media screen and (min-width: 641px) {
-
-
     /* Make Hamburger Transparent. Good Practice (SEO)
        better than "display:none". avoids flagging by
        Search engines */
     .material-icons {
         opacity: 0;
     }
-
-
     /* Setting Header as a Flex Item */
     header {
         display: -webkit-box;
@@ -26,63 +22,46 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
-
-
     /* Spacing the Flex Items using Flexbox */
     .logo-container,
     .name {
         -webkit-box-flex: 1;
         -ms-flex: 1 1 40%;
         flex: 1 1 40%;
-
     }
-
     /* Alignment and Positioning */
     .logo-container {
         text-align: left;
     }
-
     .udacity-logo {
         margin: 30px 3px;
     }
-
     .name {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         text-align: right;
         padding: 5px;
     }
-
-
     /* Fonts and Colors, alignments adjustments */
-    .name > h1 {
+    .name>h1 {
         font-size: 40px;
-
     }
-
     .name .job-title {
         font-size: 23px;
         letter-spacing: 4px;
         margin-top: -25px;
     }
-
-
     /* Optimised Image for the screen Bigger better Image*/
     /* Resolution as screen bigger and avoid pixelation*/
     .main-image {
         background: url(../images/main850.jpeg) no-repeat center/cover fixed;
         min-height: 380px;
-
     }
-
-
-    .projects > h2 {
+    .projects>h2 {
         padding: 5px;
         font-size: 25px;
         text-shadow: 2px 2px 4px grey;
     }
-
-
     /* Setting up Projects as Flex Items */
     .showcase {
         display: -webkit-box;
@@ -98,8 +77,6 @@
         -ms-flex-align: center;
         align-items: center;
     }
-
-
     .link-container {
         text-align: center;
         margin: 10px 10px 0;
@@ -112,11 +89,9 @@
         box-sizing: border-box;
         overflow: hidden;
     }
-
-
     /****  Remove Background on Social Icons.
            Set them up as flex Items to easily
-           make them responsive and grow and shrink 
+           make them responsive and grow and shrink
            uniformly and spread out easily ***/
     .social-links {
         background: none;
@@ -130,10 +105,7 @@
         display: flex;
         -ms-flex-pack: distribute;
         justify-content: space-around;
-
     }
-
-
     /*** Flex-item Characteristics ***/
     .social-item {
         text-indent: -10000px;
@@ -147,102 +119,71 @@
         flex: 1 1 auto;
         margin: 0 40px 20px
     }
-
-
     .facebook,
     .twitter,
     .github,
     .linkedin {
         height: auto;
     }
-
 }
-
 
 /****************************************************************/
 
 /****** FOR LAPTOPS AND DESKTOPS *****/
 
 @media screen and (min-width: 961px) {
-
-
     .udacity-logo {
         margin: 40px 3px 1px;
-
     }
-
     .social-item:hover {
         -webkit-filter: sepia(0);
         filter: sepia(0);
-
     }
-
-
     /* Optimised Image-set for browser to chose best
        Image according to Screen Size and Res*/
     .main-image {
         background: url(../images/main1280.jpeg) no-repeat center;
         /* Fallback image for non supporting browsers */
         /* Image-set supporting browsers */
-        background: -webkit-image-set(url(../images/main1280.jpeg) 1x,
-        url(../images/main1920.jpeg) 2x) no-repeat center;
-
-        background: image-set(url(../images/main1280.jpeg) 1x,
-        url(../images/main1920.jpeg) 2x) no-repeat center;
-
+        background: -webkit-image-set(url(../images/main1280.jpeg) 1x, url(../images/main1920.jpeg) 2x) no-repeat center;
+        background: image-set(url(../images/main1280.jpeg) 1x, url(../images/main1920.jpeg) 2x) no-repeat center;
         background-size: cover;
         width: 100%;
         min-height: 400px;
         background-attachment: fixed;
         -webkit-box-shadow: 4px 6px 5px grey;
         box-shadow: 4px 6px 5px grey;
-
     }
-
-
     /* Fonts and Colors, alignments adjustments */
-    .name > h1 {
+    .name>h1 {
         font: 100 45px;
     }
-
-
-    .projects > h2 {
+    .projects>h2 {
         padding: 5px;
         font-size: 30px;
         text-shadow: 3px 2px 4px grey;
         text-align: left;
     }
-
-
-
     .link-container:hover {
         -webkit-box-shadow: 4px 7px 20px grey;
         box-shadow: 4px 7px 20px grey;
-
     }
-
     /*** Better UX, Adds shaddow t both Image and Card ***/
     .project-item {
         height: auto;
         -webkit-box-shadow: 3px 3px 1px grey;
         box-shadow: 3px 3px 1px grey;
         -webkit-box-sizing: border-box;
-
     }
-
-
     /*** Hover Effect on Project Previewseparates the 2 events, zoom and shadow hover
     of the container div " .showcase > .link-container >"  optional use in future*/
     .project-item:hover {
         -webkit-transform: scale(1.10);
         transform: scale(1.10);
     }
-
-
     .social-item {
         margin: 0 50px 20px;
     }
-
     /* Main Picture Text area That will have a frosted Glass effect*/
     .frosty {
         opacity: 1;
@@ -252,9 +193,7 @@
         background: inherit;
         overflow: hidden;
         margin: 230px 0;
-
     }
-
     /* Pseudo element to have the frosted Glass effect*/
     .frosty:before {
         content: "";
@@ -278,7 +217,6 @@
         filter: blur(5px);
         /* variable, set to need */
     }
-
     /* Main Picture Text Styling */
     .intro {
         position: absolute;
@@ -291,17 +229,11 @@
         left: -500px;
         -webkit-animation: race-in 2.0s 2s linear forwards;
         animation: race-in 2.0s 2s linear forwards;
-
     }
-
     .intro span {
         text-shadow: 2px 1px 1px white;
         font-size: 150%;
-
     }
-
-
-
     /**** Animation Keyframes for the Main Picture Text */
     @-webkit-keyframes race-in {
         0% {
@@ -344,8 +276,6 @@
             transform: translateX(500px)
         }
     }
-
-
     @keyframes race-in {
         0% {
             Opacity: 1
