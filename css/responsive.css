@@ -80,9 +80,9 @@
     .link-container {
         text-align: center;
         margin: 10px 10px 0;
-        -ms-flex: 1 1 200px;
+        -ms-flex: 1 1 300px;
         -webkit-box-flex: 1;
-        flex: 1 1 200px;
+        flex: 1 1 300px;
         -webkit-box-shadow: 3px 3px 4px white;
         box-shadow: 3px 3px 4px white;
         -webkit-box-sizing: border-box;
